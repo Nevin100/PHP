@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the travelling form </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img class="bg" src="bg.webp" alt="MSIT Building">
+    <div class="container">
+        <h3>Welcome to MSIT TRAVEL FORM</h3>
+        <br>
+        <p>Enter your details to confirm your participiation in the trip</p>
+        <br>
+        <p>Thanks for subitting this form.. Really appreciated.</p>
+        <form action="index.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter the name:"> 
+            <input type="text" name="age" id="age" placeholder="Enter the age:"> 
+            <input type="text" name="gender" id="gender" placeholder="Enter the gender:"> 
+            <input type="email" name="email" id="email" placeholder="Enter the email:"> 
+            <input type="phone" name="phone" id="phone" placeholder="Enter the phone number:">
+            <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter additional information here"></textarea>
+            <button class="btn">Submit</button>
+        </form>
+        <!-- INSERT INTO `trip1` (`Sno`, `Name`, `Age`, `Gender`, `Email`, `Phone`, `Other`, `Date`) VALUES ('1', 'testname', '20', 'male', 'thid@this.com', '9999999999', 'My first ever php msg', current_timestamp()); -->
+    </div>    
+    <script src="index.js"></script>
+</body>
+</html>
